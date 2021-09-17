@@ -1,7 +1,7 @@
 import React,{ useRef, useState } from 'react'
 import { Container, Alert } from 'react-bootstrap'
-import { Redirect} from 'react-router-dom'
-import {useAuth} from '../Context'
+import { Redirect } from 'react-router-dom'
+import { useAuth } from '../Context'
 import Loading from './Loading'
 import NavbarBottom from './NavbarBottom'
 
