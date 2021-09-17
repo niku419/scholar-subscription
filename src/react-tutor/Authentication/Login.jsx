@@ -42,7 +42,7 @@ export default function Login() {
   
   return (
     <Container className="login main row">
-      {currentUser && <Redirect to='/Dashboard'/>}
+      {currentUser && <Redirect to='/plans'/>}
       <div className="col-md-6 center-head mt-md-0 mt-3"><h1 className="heading signup-heading">Login to this Auth app</h1></div>
       <Container className="shadow-lg p-3 my-5 col-md-6 rounded">
         <Form onSubmit={handleSubmit}>

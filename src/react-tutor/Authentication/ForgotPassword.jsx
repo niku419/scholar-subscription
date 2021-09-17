@@ -22,7 +22,9 @@ export default function ForgotPassword() {
   }
   return (
     <Container className="main forgot-password row">
-      <div className="col-md-6 center-head mt-md-0 mt-3"><h1 className="heading signup-heading">Password Reset</h1></div>
+      <div className="col-md-6 center-head mt-md-0 mt-3">
+        <h1 className="heading signup-heading">Password Reset</h1>
+      </div>
       {error && <Alert className="primary">{error}</Alert>}
       {message && <Alert className="primary">{message}</Alert>}
       <Container className="shadow-lg p-3 my-5 col-md-6 rounded">

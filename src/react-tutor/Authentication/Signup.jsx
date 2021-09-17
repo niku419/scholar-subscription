@@ -47,7 +47,7 @@ export default function Signup() {
   }
   return (
     <Container className="main signup row">
-      {redirectPossible && <Redirect to="/Dashboard" />}
+      {redirectPossible && <Redirect to="/plans" />}
       <div className="col-md-6 center-head mt-md-0 mt-3"><h1 className="heading signup-heading">Sign Up to this auth App</h1></div>
       <Container className="shadow-lg p-3 my-5 col-md-6 rounded">
         {currentUser && currentUser.email}
