@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Home from './react-tutor/Authcomponents/Home'
+import Home from './scholar-subscription/Authcomponents/Home'
 
 function App() {
   return (
