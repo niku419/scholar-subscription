@@ -15,7 +15,7 @@ export default function NavBar({brand}) {
   }
   return (
     <Container fluid className="p-0 m-0">
-      <Navbar collapseOnSelect expand="md" variant="dark" bg="transparent">
+      <Navbar collapseOnSelect variant="dark" bg="transparent">
         {redirectPossible && <Redirect to="/"/>}
         <Navbar.Brand style={{color: "#24305e"}}>{brand}</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>

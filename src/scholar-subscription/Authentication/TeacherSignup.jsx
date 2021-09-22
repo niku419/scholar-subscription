@@ -48,7 +48,9 @@ export default function TeacherSignup() {
   return (
     <Container className="main row">
       {redirectPossible && <Redirect to="/plans" />}
-      <div className="col-md-6 center-head mt-md-0 mt-3"><h1 className="heading signup-heading">Sign Up to create and view plans</h1></div>
+      <div className="col-md-6 center-head mt-md-0 mt-3">
+        <h1 className="heading signup-heading">Sign Up</h1>
+      </div>
       <Container className="shadow-lg p-3 my-5 col-md-6 rounded">
         {currentUser && currentUser.email}
         <Form onSubmit={handleSubmit}>

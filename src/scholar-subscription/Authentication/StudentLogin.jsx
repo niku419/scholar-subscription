@@ -43,8 +43,8 @@ export default function StudentLogin() {
   return (
     <Container className="main row">
       {currentUser && <Redirect to='/subscriptions'/>}
-      <div className="col-md-6 center-head mt-md-0 mt-3">
-        <h1 className="heading signup-heading">Sign Up to subscribe and get your classes</h1>
+      <div className="col-md-6 center-head mt-3">
+        <h1 className="heading signup-heading">Login for subscriptions</h1>
       </div>
       <Container className="shadow-lg p-3 my-5 col-md-6 rounded">
         <Form onSubmit={handleSubmit}>
@@ -71,7 +71,7 @@ export default function StudentLogin() {
       <Container className="d-flex justify-content-between">
         <Container className="mb-2">
           <Button disabled={loading} type="submit" variant="dark" onClick={handleSigninWithGoogle}>
-            Sign in with <FontAwesomeIcon icon={faGoogle}/>
+            <FontAwesomeIcon icon={faGoogle}/>
           </Button>
           <Button disabled={loading} type="submit" variant="dark" onClick={handleSigninWithFacebook}>
             <FontAwesomeIcon icon={faFacebookF}/>
@@ -79,7 +79,7 @@ export default function StudentLogin() {
         </Container>
         <Container>
           <div className="d-flex justify-content-end">
-            <a role="button" href="/teacher-login" className="btn btn-dark" style={{color:"white"}}>Login as a teacher</a>
+            <a role="button" href="/teacher-login" className="btn btn-dark" style={{color:"white"}}>Teacher Login</a>
           </div>
         </Container>
       </Container>

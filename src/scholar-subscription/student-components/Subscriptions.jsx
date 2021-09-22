@@ -121,7 +121,7 @@ export default function Subscriptions() {
         {plans && (
         <Row xs={1} md={2} className="g-4">
           {plans.map((plan, idx) => (
-            <Col key={idx} className="col-lg-4 col-md-6 mb-lg-2">
+            <Col key={idx} className="col-lg-4 col-md-6 mb-2">
               <Card bg="dark" text="white">
                 <Card.Header>{plan.item.name}</Card.Header>
                 <Card.Body>

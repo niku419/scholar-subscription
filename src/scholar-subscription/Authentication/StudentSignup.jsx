@@ -49,7 +49,7 @@ export default function Signup() {
     <Container className="main row">
       {redirectPossible && <Redirect to="/subscriptions" />}
       <div className="col-md-6 center-head mt-md-0 mt-3">
-        <h1 className="heading signup-heading">Sign Up to subscribe and get your classes</h1>
+        <h1 className="heading signup-heading">Sign up to subscribe</h1>
       </div>
       <Container className="shadow-lg p-3 my-5 col-md-6 rounded">
         {currentUser && currentUser.email}
