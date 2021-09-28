@@ -43,7 +43,7 @@ export default function CreatePlan() {
       <Container>
         <NavBar brand="Create plan"/>
         <Container style={{height: "76vh"}} className="d-flex justify-content-center align-items-center" >
-          {redirect && <Redirect to='/'/>}
+          {redirect && <Redirect to='/plans'/>}
           <Form onSubmit={handleSubmit} className="p-4" style={{background: "#f76c6c", borderRadius: "15px"}}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Item Name</Form.Label>
