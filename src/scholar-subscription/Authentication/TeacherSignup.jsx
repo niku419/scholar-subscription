@@ -18,6 +18,7 @@ export default function TeacherSignup() {
     e.preventDefault()
     try{
       await signinWithGoogle()
+      localStorage.setItem("role", "teacher")
     }catch(err){
       setError("Couldn't Signin with Google")
     }
@@ -26,6 +27,7 @@ export default function TeacherSignup() {
     e.preventDefault()
     try{
       await signinWithFacebook()
+      localStorage.setItem("role", "teacher")
     }catch(err){
       setError("Couldn't Signin with Facebook")
     }
@@ -39,6 +41,7 @@ export default function TeacherSignup() {
       setError("")
       setLoading(true)
       await signup(emailRef.current.value, passwordRef.current.value)
+      localStorage.setItem("role", "teacher")
       setRedirectPossible(true)
     } catch {
       setError("Failed to signup")
@@ -76,7 +79,7 @@ export default function TeacherSignup() {
           {!currentUser && (
             <div className="float-right">
               Already have an account?      
-              <Link to="/"><u className="ml-1">Login</u></Link>
+              <Link to="/teacher-login"><u className="ml-1">Login</u></Link>
             </div>
           )}
         </Form>

@@ -16,6 +16,7 @@ export default function StudentLogin() {
     e.preventDefault()
     try{
       await signinWithGoogle()
+      localStorage.setItem("role", "student")
     }catch(err){
       setError("Couldn't Signin with Google")
     }
@@ -24,6 +25,7 @@ export default function StudentLogin() {
     e.preventDefault()
     try{
       await signinWithFacebook()
+      localStorage.setItem("role", "student")
     }catch(err){
       setError("Couldn't Signin with Facebook")
     }
@@ -34,6 +36,7 @@ export default function StudentLogin() {
       setError("")
       setLoading(true)
       await login(emailRef.current.value, passwordRef.current.value)
+      localStorage.setItem("role", "student")
     } catch {
       setError("Failed to log in")
     }

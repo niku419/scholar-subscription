@@ -16,6 +16,7 @@ export default function TeacherLogin() {
     e.preventDefault()
     try{
       await signinWithGoogle()
+      localStorage.setItem("role", "teacher")
     }catch(err){
       setError("Couldn't Signin with Google")
     }
@@ -24,6 +25,7 @@ export default function TeacherLogin() {
     e.preventDefault()
     try{
       await signinWithFacebook()
+      localStorage.setItem("role", "teacher")
     }catch(err){
       setError("Couldn't Signin with Facebook")
     }
@@ -34,6 +36,7 @@ export default function TeacherLogin() {
       setError("")
       setLoading(true)
       await login(emailRef.current.value, passwordRef.current.value)
+      localStorage.setItem("role", "teacher")
     } catch {
       setError("Failed to log in")
     }
@@ -79,7 +82,7 @@ export default function TeacherLogin() {
         </Container>
         <Container>
           <div className="d-flex justify-content-end">
-            <a role="button" href="/" className="btn btn-dark" style={{color:"white"}}>Student login</a>
+            <a role="button" href="/student-login" className="btn btn-dark" style={{color:"white"}}>Student login</a>
           </div>
         </Container>
       </Container>

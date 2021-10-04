@@ -11,21 +11,23 @@ import ViewPlans from '../tutor-components/ViewPlans'
 import CreatePlan from '../tutor-components/CreatePlan'
 import Subscriptions from '../student-components/Subscriptions'
 import ClassContent from '../student-components/ClassContent'
+import Main from './Main'
 
 export default function Home() {
   return (
     <Router>
       <Context>
         <Switch>
-          <Route exact path="/" component={StudentLogin}/>
+          <Route exact path="/" component={Main}/>
+          <Route exact path="/student-login" component={StudentLogin}/>
           <Route exact path="/student-signup" component={StudentSignup}/>
           <Route exact path="/teacher-login" component={TeacherLogin}/>
           <Route exact path="/teacher-signup" component={TeacherSignup}/>
           <Route exact path='/forgotPassword' component={ForgotPassword}/>
-          <SecureRoute exact path="/subscriptions" component={Subscriptions}/>
-          <SecureRoute exact path="/class/:userId/:planId" component={ClassContent}/>
-          <SecureRoute exact path="/plans" component={ViewPlans}/>
-          <SecureRoute exact path="/createPlan" component={CreatePlan}/>
+          <SecureRoute exact path="/subscriptions" currentRole="student" component={Subscriptions}/>
+          <SecureRoute exact path="/class/:userId/:planId" currentRole="student" component={ClassContent}/>
+          <SecureRoute exact path="/plans" currentRole="teacher" component={ViewPlans}/>
+          <SecureRoute exact path="/createPlan" currentRole="teacher" component={CreatePlan}/>
         </Switch>
       </Context>
     </Router>

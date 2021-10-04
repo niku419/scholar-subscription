@@ -268,3 +268,6 @@ button, input[type="submit"], input[type="reset"] {
 .bg-light{
   background-color: #f76c6c !important;
 }
+.react-heading{
+  color: #000 !important;
+}

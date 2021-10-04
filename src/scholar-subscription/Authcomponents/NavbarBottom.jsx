@@ -12,7 +12,7 @@ export default function NavbarBottom() {
           <div>
             <Nav className="mr-auto">
               <Nav.Link href="https://github.com/niku419"><FontAwesomeIcon  icon={faGithub} color="#24305e" /></Nav.Link>
-              <Nav.Link href="https://linkedin.com/niku_419"><FontAwesomeIcon  icon={faLinkedinIn} color="#24305e" /></Nav.Link>
+              <Nav.Link href="https://linkedin.com/niku-419"><FontAwesomeIcon  icon={faLinkedinIn} color="#24305e" /></Nav.Link>
               <Nav.Link href="https://instagram.com/_niku_419"><FontAwesomeIcon  icon={faInstagram} color="#24305e" /></Nav.Link>
               <Nav.Link href="https://www.facebook.com/profile.php?id=100069976086066"><FontAwesomeIcon icon={faFacebookF} color="#24305e"/></Nav.Link>
             </Nav>

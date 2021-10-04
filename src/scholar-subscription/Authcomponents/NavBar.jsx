@@ -11,6 +11,7 @@ export default function NavBar({brand}) {
 
   function something() {
     setRedirectPossible(true)
+    localStorage.removeItem("role")
     logout()
   }
   return (
