@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import NavBar from './NavBar'
 import { Redirect } from 'react-router-dom'
 import { useAuth } from '../Context'
 
