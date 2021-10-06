@@ -9,7 +9,7 @@ export default function Main() {
   const { currentUser } = useAuth()
   return (
     <>
-      <Container style={{height: "75vh"}} fluid className="d-flex justify-content-center align-items-center">
+      <Container style={{height: "75vh"}} fluid className="d-flex justify-content-center align-items-center flex-column">
         {currentUser && (
           role ==="student" && <Redirect to={'/subscriptions'}/>
         )}
