@@ -17,9 +17,9 @@ export default function Main() {
           role ==="teacher" && <Redirect to={'/plans'}/>
         )}
         <NavBar show={false}/>
-        <div className="heading breakpoint">
+        <div className="heading">
           <div className="react-heading">
-           QR Attendance
+           Scholar Subscription
           </div>
         </div>
       </Container>
